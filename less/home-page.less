@@ -111,4 +111,24 @@
       }
     }
   }
+// bus animation
+
+  .hidden {
+    opacity: 0;
+  }
+  
+  @keyframes busIn {
+    from {
+      transform: translateX(-90%);
+    }
+    to {
+      transform: translateX(90%);
+    }
+  }
+  
+  .slideRight {
+    animation-name: busIn;
+    animation-duration: 5s;
+  }
+  
 }// home

@@ -134,7 +134,7 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif; 
+  font-family: 'Roboto', sans-serif;
 }
 h1,
 h2,
@@ -349,4 +349,19 @@ img {
 .home .content-pick .destination .btn:hover {
   background: #FFFFFF;
   color: #17A2B8;
+}
+.home .hidden {
+  opacity: 0;
+}
+@keyframes busIn {
+  from {
+    transform: translateX(-90%);
+  }
+  to {
+    transform: translateX(90%);
+  }
+}
+.home .slideRight {
+  animation-name: busIn;
+  animation-duration: 5s;
 }
